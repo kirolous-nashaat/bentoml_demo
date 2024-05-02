@@ -1,0 +1,13 @@
+service: 'service:Wine'
+labels:
+  owner: kirolous
+  project: wine_quality_demo
+include:
+  - '*.py'
+  - '*.pkl'
+python:
+  packages:
+    - torch
+    - transformers
+    - numpy
+    - scikit-learn
